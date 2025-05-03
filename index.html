@@ -34,7 +34,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body class="bg-light">
-    <div class="banner-wrap vh-100 vw-100 text-white">
+    <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
       <div class="overlay"></div>
       <header class="px-5 p-3 text-white fixed-top scrolling">
         <div>
@@ -47,11 +47,9 @@
           </nav>
         </div>
       </header>
-      <main
-        class="d-flex flex-column align-items-center justify-content-center h-75 text-center"
-      >
+       <main class="text-center">
         <h1 class="display-1">I am Thaqib Ubayd</h1>
-        <p class="lead" id="typed">Fullstack Developer</p>
+        <span id="typed" class="lead"></span>
       </main>
     </div>
 
@@ -136,12 +134,12 @@
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/Tesla.png"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
+                <h5 class="card-title">Tesla Landing Page</h5>
                 <p class="card-text">Built this with HTML & CSS</p>
                 <a
                   href="https://vc-netflix.netlify.app"
@@ -162,12 +160,12 @@
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/html_youtube.png"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
+                <h5 class="card-title">Youtube Landing Page</h5>
                 <p class="card-text">Built this with HTML & CSS</p>
                 <a
                   href="https://vc-netflix.netlify.app"
@@ -272,8 +270,10 @@
 
     <script>
         var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        strings: ['First ^1000 sentence.', 'Second sentence.']
+        strings: ['Fullstack Developer', 'Web Application'],
+        loop: true,
+        typeSpeed: 50,
+        shuffle: true,
         });
     </script>
 
